@@ -6,10 +6,6 @@
 
 **Forecast the traffic impact of city events — and deploy manpower, barricades & diversions before congestion happens.**
 
-*Flipkart Hackathon 2024 · Round 2 Prototype · Theme: Event-Driven Congestion (Planned & Unplanned) · Bengaluru*
-
-`Python` · `XGBoost` · `FastAPI` · `Streamlit` · `Folium` · 100% free / open-source
-
 </div>
 
 ---
@@ -168,7 +164,7 @@ Hugging Face Spaces or Streamlit Community Cloud.
 
 <div align="center">
 
-*Built for the Flipkart Hackathon 2024 · Dataset is anonymised (free-text may contain `[PERSON]`/`[LOCATION]` redactions).*
+*Dataset is anonymised (free-text may contain `[PERSON]`/`[LOCATION]` redactions).*
 
 **Saarathi — Anticipate the impact. Deploy with precision.**
 
