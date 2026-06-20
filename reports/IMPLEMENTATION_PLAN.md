@@ -1,6 +1,6 @@
 # Implementation Plan — Fill Every Gap
 ### Flipkart Hackathon, Round 2 · Event-Driven Congestion · Bengaluru
-### Project codename: **Saarthi** (Smart Anticipatory Allocation for Road Traffic Handling & Intervention)
+### Project codename: **Saarathi** (Smart Anticipatory Allocation for Road-traffic Advisory, Triage, Handling & Intervention)
 
 **Goal:** Build a working prototype that closes **all 10 dataset gaps (G1–G10)** and delivers the problem statement's full ask — *forecast event traffic impact + recommend optimal manpower, barricading, and diversions, using historical AND real-time data.*
 
@@ -135,7 +135,7 @@
 ## 5. Repository Structure
 
 ```
-saarthi/
+saarathi/
 ├── data/{raw,processed,external}/
 ├── etl/        clean.py  features.py  traffic.py  weather.py  events_cal.py
 ├── models/     train.py  impact_score.py  nlp_features.py  artifacts/
@@ -160,7 +160,7 @@ saarthi/
 | Video URL | Demo recording (Phase 7) |
 | Presentation | Pitch deck (Phase 7) |
 | Demo Link | Deployed dashboard (Phase 6) |
-| Repository URL | GitHub `saarthi` |
+| Repository URL | GitHub `saarathi` |
 | Source Code | Repo zip (Phase 7) |
 | Instructions to Run | README (Phase 0 → 7) |
 

@@ -1,5 +1,5 @@
 """
-Saarthi — Phase 5: FastAPI backend (real-time-ready intake).
+Saarathi — Phase 5: FastAPI backend (real-time-ready intake).
 Run:  uvicorn api.main:app --reload
 Docs: http://localhost:8000/docs
 """
@@ -13,7 +13,7 @@ from models.predict import score_event
 from rules.recommend import recommend
 from routing.divert import plan_diversion
 
-app = FastAPI(title="Saarthi API",
+app = FastAPI(title="Saarathi API",
               description="Forecast event traffic impact + recommend response.",
               version="1.0")
 
@@ -39,7 +39,7 @@ class Event(BaseModel):
 
 @app.get("/")
 def health():
-    return {"status": "ok", "service": "saarthi"}
+    return {"status": "ok", "service": "saarathi"}
 
 
 @app.post("/predict")

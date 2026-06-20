@@ -1,5 +1,5 @@
 """
-Saarthi — Phase 1: Data cleaning + feature engineering.
+Saarathi — Phase 1: Data cleaning + feature engineering.
 Fills gaps G7 (timezone) and G8 (missingness/imputation).
 Reads data/raw/astram_events.csv -> writes data/processed/events_clean.parquet (+ csv).
 """

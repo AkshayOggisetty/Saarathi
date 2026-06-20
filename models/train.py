@@ -1,5 +1,5 @@
 """
-Saarthi — Phase 3: predictive models + Impact Score.
+Saarathi — Phase 3: predictive models + Impact Score.
 Fills G1 (impact metric) and G5 (rare-class handling via class weights).
 Trains 3 models on the cleaned data and serialises them to models/artifacts/.
 

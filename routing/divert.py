@@ -1,5 +1,5 @@
 """
-Saarthi — Phase 4: diversion routing (G3).
+Saarathi — Phase 4: diversion routing (G3).
 
 Two modes:
   * OSM mode  : if osmnx + Overpass are reachable, compute a real shortest-path

@@ -1,5 +1,5 @@
 """
-Saarthi — inference + Impact Score (G1).
+Saarathi — inference + Impact Score (G1).
 Loads trained artifacts and scores a single event (dict) or a DataFrame.
 """
 import os

@@ -1,5 +1,5 @@
 """
-Saarthi — Event-Driven Congestion intelligence for Bengaluru.
+Saarathi — Event-Driven Congestion intelligence for Bengaluru.
 Flipkart Hackathon Round 2 prototype.
 
 Run:  streamlit run app/streamlit_app.py
@@ -22,7 +22,7 @@ CBD = (12.9759, 77.6045)
 SEV_COLOR = {"Critical": "#e63946", "High": "#f3722c",
              "Moderate": "#f7ca00", "Low": "#43aa8b"}
 
-st.set_page_config(page_title="Saarthi | Bengaluru Traffic Intelligence",
+st.set_page_config(page_title="Saarathi | Bengaluru Traffic Intelligence",
                    layout="wide", page_icon="🚦")
 
 
@@ -64,7 +64,7 @@ def build_event(cause, etype, corridor, zone, lat, lon, hour, dow, lk):
 df = load_scored()
 lk = lookups(df)
 
-st.title("🚦 Saarthi — Event-Driven Congestion Intelligence")
+st.title("🚦 Saarathi — Event-Driven Congestion Intelligence")
 st.caption("Forecast traffic impact of events and recommend manpower, barricading & "
            "diversions — Bengaluru. Flipkart Hackathon R2.")
 
@@ -207,6 +207,6 @@ with tab4:
     st.caption("Planned events: rarer but higher impact & far higher road-closure rate.")
 
 st.divider()
-st.caption("Saarthi · Smart Anticipatory Allocation for Road Traffic Handling & Intervention · "
+st.caption("Saarathi · Smart Anticipatory Allocation for Road-traffic Advisory, Triage, Handling & Intervention · "
            "Built on the anonymised Astram dataset. Diversion uses a local engine "
            "(OSM routing plugs in where reachable).")

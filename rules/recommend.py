@@ -1,5 +1,5 @@
 """
-Saarthi — Phase 4: resource recommendation rule engine (G4).
+Saarathi — Phase 4: resource recommendation rule engine (G4).
 Maps a scored event -> manpower, barricades, diversion, advisory.
 No 'optimal' labels exist in the data, so this is an expert rule engine,
 designed RL-ready (reward = clearance-time reduction) for future learning.
