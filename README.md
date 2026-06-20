@@ -155,13 +155,6 @@ saarathi/
 
 ---
 
-## Cost
-
-Zero. 100% free, open-source tooling — no paid APIs, no credit card. Deployable for free on
-Hugging Face Spaces or Streamlit Community Cloud.
-
----
-
 <div align="center">
 
 *Dataset is anonymised (free-text may contain `[PERSON]`/`[LOCATION]` redactions).*
