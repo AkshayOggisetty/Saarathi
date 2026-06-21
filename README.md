@@ -4,7 +4,7 @@
 
 ### Smart Anticipatory Allocation for Road-traffic Advisory, Triage, Handling & Intervention
 
-**Forecast the traffic impact of city events — and deploy manpower, barricades & diversions before congestion happens.**
+**Forecast the traffic impact of city events and deploy manpower, barricades and diversions before congestion happens.**
 
 </div>
 
@@ -12,7 +12,7 @@
 
 ## Why "Saarathi"?
 
-*Saarathi* (सारथी) is the charioteer who guides the chariot through the battlefield — anticipating
+*Saarathi* (सारथी) is the charioteer who guides the chariot through the battlefield, anticipating
 obstacles and steering to safety. Bengaluru's traffic is that battlefield; Saarathi is the data-driven
 guide that helps authorities anticipate event-driven congestion and steer resources to where they're
 needed before gridlock forms.
@@ -37,13 +37,13 @@ manpower, barricading, and diversion plans?*
 
 | Capability | How it works |
 |---|---|
-| **Forecast impact** | Three XGBoost models predict an event's **duration**, **road-closure probability**, and **operational priority**, fused into a single **0–100 Impact Score** |
+| **Forecast impact** | Three XGBoost models predict an event's **duration**, **road-closure probability**, and **operational priority**, fused into a single **0 to 100 Impact Score** |
 | **Recommend response** | A rule engine maps severity to **officers, barricades, tow/drainage crews, diversion flag, public advisory** |
 | **Plan diversions** | A routing engine generates a **bypass around the blocked point** (real OpenStreetMap routing where reachable, local engine otherwise) |
 | **Real-time ready** | An event-stream **replay simulates a live feed**; a FastAPI `/intake` endpoint accepts real feeds at the same point |
 | **Operations map** | A city-wide **Impact-Score hotspot heatmap** to pre-position manpower |
 
-Built on the anonymised **Astram dataset** — 8,057 real Bengaluru events (Nov 2023 – Apr 2024), 100% geocoded.
+Built on the anonymised **Astram dataset**: 8,057 real Bengaluru events (Nov 2023 to Apr 2024), 100% geocoded.
 
 ---
 
@@ -76,10 +76,9 @@ python models/score_all.py # score history for the map
 
 | Tab | What you see |
 |---|---|
-| **Operations Map** | Predicted hotspot heatmap + severity-coloured events across Bengaluru |
-| **Impact Simulator** | Enter a new/upcoming event to get an instant Impact Score, response plan & diversion route |
+| **Forecast & Recommend** | Enter an upcoming event to get an instant Impact Score, a response plan (officers, barricades, crews) and a diversion route |
+| **Operations Map** | Predicted hotspot heatmap and severity-coloured events across Bengaluru |
 | **Real-Time Stream** | Events replayed in time order, scored live |
-| **Insights** | Causes, corridors, severity mix, planned-vs-unplanned impact |
 
 ---
 
@@ -109,7 +108,7 @@ python models/score_all.py # score history for the map
 
 | Model | Target | Test F1 |
 |---|---|---|
-| Duration band | `<1h / 1–6h / 6–24h / >24h` | ~0.51 |
+| Duration band | `<1h / 1-6h / 6-24h / >24h` | ~0.51 |
 | Road closure | needs closure (binary) | ~0.99\* |
 | Priority | High vs Low (binary) | ~0.99\* |
 
@@ -121,7 +120,7 @@ predictive task and drives most of the Impact Score.
 
 ## Honest about the data (and how we engineered around it)
 
-The Astram dataset logs *incidents*, not *traffic measurements*. We're explicit about its limits —
+The Astram dataset logs *incidents*, not *traffic measurements*. We're explicit about its limits;
 see [`reports/DATASET_GAPS_REPORT.md`](reports/DATASET_GAPS_REPORT.md):
 
 | Gap | Our approach |
@@ -159,6 +158,6 @@ saarathi/
 
 *Dataset is anonymised (free-text may contain `[PERSON]`/`[LOCATION]` redactions).*
 
-**Saarathi — Anticipate the impact. Deploy with precision.**
+**Saarathi: Anticipate the impact. Deploy with precision.**
 
 </div>

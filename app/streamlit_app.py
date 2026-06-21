@@ -1,6 +1,5 @@
 """
-Saarathi — Event-Driven Congestion intelligence for Bengaluru.
-Flipkart Hackathon Round 2 prototype.
+Saarathi: Event-Driven Congestion intelligence for Bengaluru.
 
 Run:  streamlit run app/streamlit_app.py
 """
@@ -64,9 +63,9 @@ def build_event(cause, etype, corridor, zone, lat, lon, hour, dow, lk):
 df = load_scored()
 lk = lookups(df)
 
-st.title("Saarathi — Event-Driven Congestion Intelligence")
+st.title("Saarathi: Event-Driven Congestion Intelligence")
 st.caption("Forecast the traffic impact of planned and unplanned events and recommend "
-           "manpower, barricading and diversion plans — Bengaluru.")
+           "manpower, barricading and diversion plans for Bengaluru.")
 
 tab1, tab2, tab3 = st.tabs(
     ["Forecast & Recommend", "Operations Map", "Real-Time Stream"])
@@ -104,7 +103,7 @@ with tab1:
         k3.metric("Road-closure prob.", f"{sc['p_road_closure']*100:.0f}%")
         k4.metric("Officers to deploy", rec["officers"])
 
-        st.markdown(f"### Recommended response — {rec['priority_tier']} "
+        st.markdown(f"### Recommended response: {rec['priority_tier']} "
                     f"({rec['confidence']} confidence)")
         r1, r2 = st.columns(2)
         with r1:
@@ -147,7 +146,7 @@ with tab2:
     if cause_sel:
         d = d[d.event_cause.isin(cause_sel)]
     with c1:
-        st.subheader(f"Predicted event hotspots — {len(d):,} events")
+        st.subheader(f"Predicted event hotspots ({len(d):,} events)")
         m = folium.Map(location=CBD, zoom_start=11, tiles="cartodbpositron")
         if show_heat:
             HeatMap(d[["latitude", "longitude", "impact_score"]].values.tolist(),
@@ -160,7 +159,7 @@ with tab2:
             ).add_to(m)
         st_folium(m, height=560, use_container_width=True)
     st.info("Deployment view: the redder and denser the area, the higher the predicted "
-            "operational load — use it to pre-position manpower across the city.")
+            "operational load. Use it to pre-position manpower across the city.")
 
 # ------------------------------------------------------- TAB 3: REAL-TIME STREAM
 with tab3:
