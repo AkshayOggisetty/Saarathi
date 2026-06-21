@@ -27,7 +27,7 @@ def recommend(scored: dict, event: dict) -> dict:
     barricade = p_close >= 0.5 or sev in ("Critical", "High")
     n_barricades = (6 if sev == "Critical" else 4 if sev == "High"
                     else 2 if barricade else 0)
-    divert = p_close >= 0.5 or sev == "Critical"
+    divert = sev in ("Critical", "High") or p_close >= 0.4
 
     tow = event.get("event_cause") in ("vehicle_breakdown", "accident")
     drainage = event.get("event_cause") == "water_logging"
