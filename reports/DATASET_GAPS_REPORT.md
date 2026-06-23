@@ -10,7 +10,7 @@
 
 ## 1. The Core Mismatch in One Sentence
 
-> The problem asks us to **forecast traffic impact in real time and prescribe optimal response plans** — but the dataset is a **historical incident log that never measures traffic, never streams live, and never records what response was taken or whether it worked.**
+> The problem requires **forecasting traffic impact in real time and prescribing optimal response plans** — but the dataset is a **historical incident log that never measures traffic, never streams live, and never records what response was taken or whether it worked.**
 
 Everything below is a consequence of that mismatch.
 
@@ -128,7 +128,7 @@ Everything below is a consequence of that mismatch.
 6. **Fix or drop the timezone-affected hour field** before using temporal features.
 7. **Model on the reliable core columns**; treat sparse fields as optional enrichment.
 
-> **One-line pitch posture:** *"The Astram data tells us reliably where and how severe disruptions are; we engineer around its three gaps — no impact metric, no live feed, no road graph — with a proxy target, a simulated/RT-ready pipeline, and an external routing layer."*
+> **One-line pitch posture:** *"The Astram data reliably shows where and how severe disruptions are; Saarathi engineers around its three gaps — no impact metric, no live feed, no road graph — with a proxy target, a simulated/RT-ready pipeline, and an external routing layer."*
 
 ---
 

@@ -118,12 +118,12 @@ predictive task and drives most of the Impact Score.
 
 ---
 
-## Honest about the data (and how we engineered around it)
+## Honest about the data (and how it is engineered around)
 
-The Astram dataset logs *incidents*, not *traffic measurements*. We're explicit about its limits;
+The Astram dataset logs *incidents*, not *traffic measurements*. The limitations are stated explicitly;
 see [`reports/DATASET_GAPS_REPORT.md`](reports/DATASET_GAPS_REPORT.md):
 
-| Gap | Our approach |
+| Gap | Approach |
 |---|---|
 | No traffic-impact metric | Composite **Impact Score** as a transparent proxy |
 | No real-time feed | **Stream replay** + real-time-ready API intake |

@@ -150,7 +150,7 @@ A three-layer **Congestion Impact & Resource Recommendation** system:
 2. **Recommend** — rule engine maps predicted severity → **manpower level + barricade flag + diversion flag**.
 3. **Visualize** — live **map dashboard** with hotspot heatmap and corridor load (the 100% geocoding makes this demo-strong), plus a "simulate a new event" panel for the real-time story.
 
-**Honest pitch framing for judges:** *"We forecast severity from historical Astram data, layer an external road-network for diversions and a rule engine for manpower/barricades, and architect for real-time feeds — explicitly engineering around the dataset's limits."* Naming the gaps and engineering around them is a scoring advantage.
+**Honest pitch framing for judges:** *"Saarathi forecasts severity from historical Astram data, layers an external road-network for diversions and a rule engine for manpower/barricades, and is architected for real-time feeds — explicitly engineering around the dataset's limits."* Naming the gaps and engineering around them is a scoring advantage.
 
 ---
 
